@@ -132,6 +132,11 @@ chown -R www-data:www-data /var/www/officeforge
 
 echo "Installation complete!"
 echo ""
+echo "The server's URL is:"
+echo "    https://$server_name"
+echo ""
+echo "Please set the APP_URL value in the .env file"
+echo ""
 echo "The database user's password is:"
 echo "    $db_password"
 echo ""
