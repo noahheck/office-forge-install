@@ -130,6 +130,15 @@ chown -R www-data:www-data /var/www/officeforge
 
 
 
+echo "Adding Office Forge cron job..."
+cronfile="/etc/cron.d/officeforge"
+touch cronfile
+
+echo "# /etc/cron.d/officeforge: crontab entries for the officeforge installation" > cronfile
+echo "" >> cronfile
+echo "* * * * * root cd /var/www/officeforge/ && php artisan schedule:run >> /dev/null 2>&1" >> cronfile
+
+
 echo "Installation complete!"
 echo ""
 echo "The server's URL is:"
