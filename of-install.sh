@@ -155,3 +155,5 @@ echo "and make sure you run"
 echo ""
 echo "    ./artisan migrate"
 echo ""
+
+./artisan of:generate-setup-key
