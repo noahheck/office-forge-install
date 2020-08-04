@@ -19,8 +19,9 @@ After the installation process is completed, you'll be given a few additional ac
 
 - Set the **APP_URL** and **DB_PASSWORD** values in the */var/www/officeforge/.env* file
 - Execute the database migrations: `php /var/www/officeforge/artisan migrate`
+- Copy the server setup key that is provided in the script output
 
-Congratulations! Your Office Forge server should now be set up and ready to accept connections from the Internet. Try loading your Office Forge server's URL in your web browser.
+Congratulations! Your Office Forge server should now be set up and ready to accept connections from the Internet. Try loading your Office Forge server's URL in your web browser. Provide the server setup key from above and you'll be able to complete the Office Forge first run setup wizard!
 
 ### Notes
 
