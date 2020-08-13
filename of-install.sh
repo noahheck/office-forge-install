@@ -156,4 +156,8 @@ echo ""
 echo "    ./artisan migrate"
 echo ""
 
-./artisan of:generate-setup-key
+echo "After performing the database migrations, generate the server setup key"
+echo "and provide to the client to finish setting up the installation:"
+echo ""
+echo "    ./artisan of:generate-setup-key"
+echo ""
