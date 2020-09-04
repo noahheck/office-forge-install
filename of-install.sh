@@ -136,6 +136,8 @@ touch $cronfile
 
 echo "# /etc/cron.d/officeforge: crontab entries for the officeforge installation" > $cronfile
 echo "" >> $cronfile
+echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" >> $cronfile
+echo "" >> $cronfile
 echo "* * * * * root cd /var/www/officeforge/ && php artisan schedule:run >> /dev/null 2>&1" >> $cronfile
 
 
