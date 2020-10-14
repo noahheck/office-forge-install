@@ -45,7 +45,7 @@ mysql -e "CREATE USER 'officeforge'@'localhost' IDENTIFIED BY '$db_password'"
 mysql -e "GRANT ALL PRIVILEGES ON officeforge.* TO 'officeforge'@'localhost' WITH GRANT OPTION"
 
 echo "Installing PHP..."
-apt install -y php libapache2-mod-php php-mysql php-bcmath php-json php-mbstring php-tokenizer php-xml php-gd php-gmp
+apt install -y php libapache2-mod-php php-mysql php-bcmath php-json php-mbstring php-tokenizer php-xml php-gd php-gmp php-zip
 
 
 
